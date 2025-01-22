@@ -1,7 +1,6 @@
 {
   "name": "craftcoffeshop-adminpanel",
   "private": true,
-  "proxy": "https://crudapi.co.uk",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
