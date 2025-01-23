@@ -1,0 +1,14 @@
+.listContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.listContainer > :first-child {
+  flex: 0 0 250px;
+}
+
+.listContainer > :last-child {
+  flex: 1;
+  padding: 1rem;
+  overflow: auto;
+}
