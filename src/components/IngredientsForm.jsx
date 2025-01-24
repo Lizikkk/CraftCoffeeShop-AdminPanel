@@ -31,12 +31,18 @@ const IngredientsForm = ({onFormSubmit, title, price, description, strength, fla
     
 
     return <form onSubmit={onSubmit}>
+
+        <h2>Add Ingredient</h2>
+        
+        <p>Ingredient</p>
         <input
         type='text'
         placeholder="Title"
         ref={titleRef}
         defaultValue={title}
         />
+
+        <p>Price</p>
         <input
         type="number"
         step="0.01"
@@ -44,24 +50,31 @@ const IngredientsForm = ({onFormSubmit, title, price, description, strength, fla
         ref={priceRef}
         defaultValue={price}
         />
+
+        <p>Description</p>
         <input
         type='text'
         placeholder="Description"
         ref={descriptionRef}
         defaultValue={description}
         />
+
+        <p>Flavor</p>
         <input
         type='text'
         placeholder="Flavor"
         ref={flavorRef}
         defaultValue={flavor}
         />
+
+        <p>Strength</p>
         <input
         type='text'
         placeholder="Strength (optional)"
         ref={strengthRef}
         defaultValue={strength}
         />
+
         <button>Add Ingredient</button>
     </form>
 

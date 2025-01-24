@@ -1,7 +1,7 @@
 import CoffeeForm from "../components/CoffeeForm"
 import useRequest from "../hooks/useRequest"
 
-const CoffeeListPage = () =>{
+const AddCoffeePage = () =>{
    const {sendRequest, loading} = useRequest({url:'/api/v1/coffee', method:'POST'})
 
    const onSubmit = (title, ingredients, description, strength, image, price, country, caffeine) => {
@@ -16,4 +16,4 @@ const CoffeeListPage = () =>{
     )
 }
 
-export default CoffeeListPage
+export default AddCoffeePage

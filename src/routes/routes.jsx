@@ -1,5 +1,5 @@
-import CoffeeListPage from "../pages/CoffeeListPage";
-import IngredientsPage from "../pages/IngredientsPage";
+import AddCoffeePage from '../pages/AddCoffeePage'
+import AddIngredientPage from '../pages/AddIngredientsPage';
 import Mainpage from "../pages/MainPage";
 
 const routes = [
@@ -8,11 +8,11 @@ const routes = [
         path:'/'
     },
     {
-        element:<CoffeeListPage/>,
+        element:<AddCoffeePage/>,
         path: '/coffeeList'
     },
     {
-        element:<IngredientsPage/>,
+        element:<AddIngredientPage/>,
         path:'/ingredients'
     }
     
